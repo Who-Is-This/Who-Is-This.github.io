@@ -1,0 +1,146 @@
+/* Gruvbox Dark Palette */
+:root {
+    --bg0: #282828;
+    --bg1: #3c3836;
+    --fg0: #fbf1c7;
+    --fg1: #ebdbb2;
+    --red: #fb4934;
+    --green: #b8bb26;
+    --yellow: #fabd2f;
+    --blue: #83a598;
+    --purple: #d3869b;
+    --aqua: #8ec07c;
+    --orange: #fe8019;
+    --gray: #928374;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg0);
+    color: var(--fg1);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+code, .logo, h1, h2, h3 {
+    font-family: 'Fira Code', monospace;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navigation */
+nav {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--bg1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--aqua);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--yellow);
+}
+
+/* Header */
+header {
+    padding: 5rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--fg0);
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: var(--orange);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+/* Skills */
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    color: var(--blue);
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--blue);
+    padding-left: 1rem;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-item {
+    background: var(--bg1);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--green);
+    font-size: 0.9rem;
+}
+
+/* Projects */
+.project-card {
+    background: var(--bg1);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--gray);
+}
+
+.project-card h3 {
+    color: var(--purple);
+    margin-bottom: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--yellow);
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    color: var(--gray);
+    font-size: 0.8rem;
+}
